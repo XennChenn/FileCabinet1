@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+ body {
+ 	color: #565a5c;
+ 	background-color: #F8F8F8;
+ }
+
+ .container-fluid {
+ 	width: 80%;
+ }
+
+ .container {
+  width: 70%;
+
+  h1 {
+  	font-size: 50px;
+  }
+ }
+
+  .navbar-default {
+ 	background-color: #FFFFFF;
+ 	margin-bottom: 20px;
+ 	border-radius: 0px;
+
+ 	a {
+ 		text-decoration: none;
+ 	} 	
+ }
+
+ .background-image {
+ 	background-image: url("/assets/file-cabinet.jpg");
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	height: 600px; 	
+ 	padding: 200px 0px;
+ 	margin: 0px;
+ 	margin-top: -20px;
+ 	text-align: center;
+
+ 	h1 {
+ 		font-size: 72px;
+ 		color: #fff;
+ 	}
+
+ 	p {
+ 	font-size: 32px;
+ 	color: #fff;
+ 	}
+ }
+
+ .btn {
+ 	font-size: 18px;
+ 	padding: 8px 28px;	
+
+ 	.btn-primary {
+ 		width: 200px;
+	 	border: 1px solid #ff5a5f;
+	 	border-radius: 3px;
+	 	font-weight: bold;	 	
+	 	color: #fff;
+	 	padding: 20px 35px 20px 35px;
+ 	}
+
+ 	.btn:hover, .btn:focus{
+ 		background-color: #ffffff; 	
+ 		outline: none;
+ 	}
+ }
+
+ .nav {
+ 	li {
+ 		a {
+ 			margin-top: 10px;
+ 		}
+ 	}
+ }
+
+.container {
+	.jumbotron {
+ 	padding: 1px 30px;
+ 	margin: 10px 10px 20px 10px;  	
+
+ 	h1 {
+ 		font-size: 36px;
+ 		color: #565a5c;
+ 	}
+
+ 	p {
+ 		font-size: 14px;
+ 		color: #565a5c;
+ 	}
+
+ 	:hover {
+ 		text-decoration: none;
+ 		color: #6f7476;
+ 	}
+ }
+}
+ 
+
+
+ 
+
+
+
+ 
+

@@ -1,2 +1,21 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+
+<div class="container">
+	<div class="row">
+		<div class="text-center">
+			<h1><%= @post.title %></h1>
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<%= @post.content %><br>
+	<br>
+	<br>
+	<div class="text-center">
+		<%= link_to "Edit", edit_post_path, class: "btn btn-primary" %>
+		<%= link_to "Trash", post_path(@post), method: :delete, class: "btn btn-warning" %>
+	</div>
+	
+</div>
+
+

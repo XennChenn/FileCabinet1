@@ -1,2 +1,21 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="container">
+	<div class="text-center">
+		<h1>Post</h1>
+		<%= link_to "Create Post", new_post_path, class: "btn btn-primary" %>
+	</div>
+	
+	<% @posts.each do |post| %>
+		<div class="jumbotron">
+			<%= link_to post_path(post) do %>
+				<h1><%= post.title %></h1>				
+				<p><%= truncate(post.content, length:50) %></p><br>
+				<div class="pull-right">
+					<p><%= time_ago_in_words(post.created_at) %></p>
+				</div>				
+			<% end %>
+		</div>		
+	<% end %>	
+</div>
+
+
+
